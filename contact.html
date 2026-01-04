@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Leather Art</title>
+  <meta name="description" content="Contact Leather Art for orders, pricing, and custom requests." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Leather Art logo">
+      <div>
+        <div class="title">Leather Art</div>
+        <div class="sub">Crafted leather goods</div>
+      </div>
+    </a>
+    <button class="menuBtn" data-menu-btn aria-label="Open menu">Menu</button>
+    <nav class="links" data-links>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <span class="badge">Contact</span>
+    <h1 style="margin-top:12px">Let’s talk</h1>
+    <p class="lead">Reach out for product inquiries, customization, or corporate orders.</p>
+
+    <div class="grid2" style="margin-top:18px">
+      <div class="card">
+        <h3>Contact details</h3>
+        <p><b>Email:</b> <a href="mailto:info@leatherart.com">info@leatherart.com</a></p>
+        <p><b>Phone:</b> +000 000 000</p>
+        <p><b>Location:</b> Your city, country</p>
+        <p class="notice" style="margin-top:12px">
+          Replace these placeholders with the company’s real contact info.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Send a message</h3>
+
+        <!-- Replace action with your Formspree endpoint, e.g. https://formspree.io/f/xxxxxx -->
+        <form class="form" action="#" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input class="input" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" placeholder="you@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Send</button>
+          <p class="notice">If you want, I’ll set this up with a free form service so it actually sends emails.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="section small">
+      <hr class="sep">
+      <div style="padding-top:22px" class="card">
+        <h3 style="margin-top:0">Optional: map embed</h3>
+        <p style="margin:0;color:var(--muted)">
+          You can embed a Google Map here. If you give me the address (or approximate area), I’ll generate the exact embed snippet.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footerGrid">
+    <div>
+      <b>Leather Art</b>
+      <small>Premium leather craftsmanship • Informational catalog site</small>
+      <small>© <span id="year"></span> Leather Art. All rights reserved.</small>
+    </div>
+    <div style="text-align:right">
+      <a href="about.html">About</a> ·
+      <a href="products.html">Products</a> ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
