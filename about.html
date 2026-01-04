@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Leather Art</title>
+  <meta name="description" content="Learn about Leather Art, our craftsmanship, values, and process." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Leather Art logo">
+      <div>
+        <div class="title">Leather Art</div>
+        <div class="sub">Crafted leather goods</div>
+      </div>
+    </a>
+    <button class="menuBtn" data-menu-btn aria-label="Open menu">Menu</button>
+    <nav class="links" data-links>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <span class="badge">About Leather Art</span>
+    <h1 style="margin-top:12px">Craftsmanship with a modern, professional standard.</h1>
+    <p class="lead">
+      Leather Art is focused on premium leather goods designed for durability, clean finishing, and corporate-ready presentation.
+      We combine material selection, careful cutting, and quality control to deliver consistent results.
+    </p>
+
+    <div class="grid2" style="margin-top:24px">
+      <div class="card">
+        <h3>Our approach</h3>
+        <p>
+          We prioritize material quality and repeatable finishing—stitching alignment, edge treatment, and hardware fit—so each item
+          looks and performs professionally.
+        </p>
+      </div>
+      <div class="card">
+        <h3>What we make</h3>
+        <p>
+          Wallets, belts, accessories, gift items, and custom pieces. Our catalog can be adapted for branding, events, and business needs.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Quality standards</h3>
+        <p>
+          Every piece is checked for symmetry, stitching consistency, and finishing detail before delivery.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Customization</h3>
+        <p>
+          We support color variations, leather choices, and logo stamping/embossing where applicable.
+        </p>
+      </div>
+    </div>
+
+    <div class="section small">
+      <hr class="sep">
+      <div style="padding-top:26px" class="grid2">
+        <div>
+          <h2 style="margin:0 0 8px">Materials & care</h2>
+          <p style="margin:0;color:var(--muted)">
+            Leather is a natural material—texture and tone can vary. With basic care, high-quality leather develops a distinct patina over time.
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Simple care tips</h3>
+          <ul style="margin:0;color:var(--muted)">
+            <li>Avoid prolonged exposure to water.</li>
+            <li>Store away from direct sunlight for long periods.</li>
+            <li>Use a suitable leather conditioner occasionally.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footerGrid">
+    <div>
+      <b>Leather Art</b>
+      <small>Premium leather craftsmanship • Informational catalog site</small>
+      <small>© <span id="year"></span> Leather Art. All rights reserved.</small>
+    </div>
+    <div style="text-align:right">
+      <a href="about.html">About</a> ·
+      <a href="products.html">Products</a> ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
