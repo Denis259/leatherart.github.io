@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Leather Art</title>
+  <meta name="description" content="Browse Leather Art products and descriptions. Contact us for orders and custom options." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Leather Art logo">
+      <div>
+        <div class="title">Leather Art</div>
+        <div class="sub">Crafted leather goods</div>
+      </div>
+    </a>
+    <button class="menuBtn" data-menu-btn aria-label="Open menu">Menu</button>
+    <nav class="links" data-links>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <span class="badge">Catalog</span>
+    <h1 style="margin-top:12px">Products</h1>
+    <p class="lead">This is an informational catalog. To request pricing, quantities, or customization, contact us.</p>
+
+    <div class="productsGrid" style="margin-top:20px">
+      <!-- Copy/paste product cards and update data-* fields -->
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-1.jpg" alt="Classic Wallet"></div>
+        <div class="body">
+          <h4>Classic Wallet</h4>
+          <p>Minimal silhouette with durable stitching and refined edges.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Everyday carry</span>
+          <button class="btn small" data-product-open
+            data-title="Classic Wallet"
+            data-img="assets/img/product-1.jpg"
+            data-desc="A clean, professional wallet designed for daily use. Finished edges, consistent stitching, and a compact profile."
+            data-bullets="Full-grain leather options|Multiple colorways|Custom stamping available">
+            Details
+          </button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-2.jpg" alt="Signature Belt"></div>
+        <div class="body">
+          <h4>Signature Belt</h4>
+          <p>Structured build with premium hardware for a modern look.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Corporate style</span>
+          <button class="btn small" data-product-open
+            data-title="Signature Belt"
+            data-img="assets/img/product-2.jpg"
+            data-desc="A professional belt made for long-term wear. Built with attention to finishing and fit."
+            data-bullets="Premium buckle hardware|Multiple widths|Size customization">
+            Details
+          </button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-3.jpg" alt="Notebook Cover"></div>
+        <div class="body">
+          <h4>Notebook Cover</h4>
+          <p>Elegant cover for meetings, gifts, and brand presentation.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Gifts & branding</span>
+          <button class="btn small" data-product-open
+            data-title="Notebook Cover"
+            data-img="assets/img/product-3.jpg"
+            data-desc="A premium leather cover designed for clean desk presence and professional gifting."
+            data-bullets="Logo embossing|Multiple sizes|Gift-ready presentation">
+            Details
+          </button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-4.jpg" alt="Key Holder"></div>
+        <div class="body">
+          <h4>Key Holder</h4>
+          <p>Compact accessory with a clean look and strong hardware.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Accessory</span>
+          <button class="btn small" data-product-open
+            data-title="Key Holder"
+            data-img="assets/img/product-4.jpg"
+            data-desc="A neat, durable key holder with attention to stitching and edge finishing."
+            data-bullets="Multiple finishes|Secure hardware|Great for gifts">
+            Details
+          </button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-5.jpg" alt="Card Holder"></div>
+        <div class="body">
+          <h4>Card Holder</h4>
+          <p>Slim and modern—ideal for minimal everyday carry.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Minimal</span>
+          <button class="btn small" data-product-open
+            data-title="Card Holder"
+            data-img="assets/img/product-5.jpg"
+            data-desc="A slim card holder designed to keep a low profile while staying durable and professional."
+            data-bullets="Compact build|Clean stitching|Optional logo stamp">
+            Details
+          </button>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="thumb"><img src="assets/img/product-6.jpg" alt="Leather Pouch"></div>
+        <div class="body">
+          <h4>Leather Pouch</h4>
+          <p>Versatile pouch for tools, essentials, or gifting.</p>
+        </div>
+        <div class="actions">
+          <span class="tag">Versatile</span>
+          <button class="btn small" data-product-open
+            data-title="Leather Pouch"
+            data-img="assets/img/product-6.jpg"
+            data-desc="A versatile pouch with a clean silhouette—useful for organizing essentials and presenting gifts."
+            data-bullets="Multiple sizes|Color options|Custom branding">
+            Details
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <p class="notice" style="margin-top:16px">
+      Tip: Replace product images in <code>assets/img/</code> and edit each product card’s text and <code>data-*</code> fields.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footerGrid">
+    <div>
+      <b>Leather Art</b>
+      <small>Premium leather craftsmanship • Informational catalog site</small>
+      <small>© <span id="year"></span> Leather Art. All rights reserved.</small>
+    </div>
+    <div style="text-align:right">
+      <a href="about.html">About</a> ·
+      <a href="products.html">Products</a> ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modalOverlay" data-modal-overlay>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modalTop">
+      <b data-modal-title>Product</b>
+      <button data-modal-close aria-label="Close">Close</button>
+    </div>
+    <div class="modalBody">
+      <div class="modalImg">
+        <img data-modal-img src="" alt="">
+      </div>
+      <div class="modalText" data-modal-text></div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
